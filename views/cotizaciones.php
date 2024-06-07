@@ -1,7 +1,7 @@
 <?php
 session_start();
 // $conexion = new mysqli("localhost", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu");
-$conexion = new mysqli("localhost", "root", "", "ghxumdmy_tamiperu");
+$conexion = new mysqli("localhost", "root", "", "tamiperu");
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
@@ -553,6 +553,7 @@ $conexion->close();
                 <?php if ($rol === "admin") : ?>
                     <td>
                         <button type="button" class="btn_new" id="open-modal-btn">Nuevo <i class="fas fa-plus"></i> </button>
+                        <a href="./content-post.php" class="btn_new" style="text-align: center; padding-top: 12px;" >Nuevo Post <i class="fas fa-plus"></i></a>
                     </td>
                 <?php endif; ?>
             </div>

@@ -16,6 +16,7 @@
 <body>
 
     <?php include_once "header.php"; ?>
+
     <main class="main__blog">
         <section class="hero" loading="lazy">
             <div class="container-hero">
@@ -25,76 +26,75 @@
         </section>
 
         <section class="section-container-blogs" id="sectionBlog">
-            <!-- Primer blog estatico / utilizar toda la clase container-blogs para el bucle -->
-            <div class="container-blogs">
-                <div class="blogs">
-                    <div class="blog">
-                        <div class="titulo limited-title">
-                            <h3>Titulo del blog</h3>
-                        </div>
-                        <div class="resumen limited-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deserunt, dolore modi harum molestias quasi facilis labore laboriosam illo officiis fugiat rerum ex doloremque deleniti aspernatur nemo molestiae provident sequi.
-                        </div>
-                        <div class="btn-blog">
-                            <a href="link-de-la-publicacion" class="btn-blog">Leer más</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Contabilizar las imagenes del 1 al 10, al llegar al 10 repetir desde el 1 -->
-                <div class="img-blogs">
-                    <div class="img-blog">
-                        <img src="../public/images/img-blog/blog-1.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Segundo blog estatico / borrar cuando se realice el bucle -->
-            <div class="container-blogs">
-                <div class="blogs">
-                    <div class="blog">
-                        <div class="titulo limited-title">
-                            <h3>Titulo del blog</h3>
-                        </div>
-                        <div class="resumen limited-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deserunt, dolore modi harum molestias quasi facilis labore laboriosam illo officiis fugiat rerum ex doloremque deleniti aspernatur nemo molestiae provident sequi.
-                        </div>
-                        <div class="btn-blog">
-                            <a href="link-de-la-publicacion" class="btn-blog">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-blogs">
-                    <div class="img-blog">
-                        <img src="../public/images/img-blog/blog-2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-blogs">
-                <div class="blogs">
-                    <div class="blog">
-                        <div class="titulo limited-title">
-                            <h3>Titulo del blog</h3>
-                        </div>
-                        <div class="resumen limited-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deserunt, dolore modi harum molestias quasi facilis labore laboriosam illo officiis fugiat rerum ex doloremque deleniti aspernatur nemo molestiae provident sequs labore laboriosam illo officiis fugiat rerum ex doloremque deleniti aspernatur nemo molestiae provident sequs labore laboriosam illo officiis fugiat rerum ex doloremque deleniti aspernatur nemo molestiae provident sequi.
-                        </div>
-                        <div class="btn-blog">
-                            <a href="link-de-la-publicacion" class="btn-blog">Leer más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="img-blogs">
-                    <div class="img-blog">
-                        <img src="../public/images/img-blog/blog-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
     <?php include_once "footer.php"; ?>
-    <script type="application/javascript" src="../public/js/main.js" async></script>
+
+
+    <script>
+        //section blog
+        const htmlBlog = document.getElementById('sectionBlog');
+
+        //lista de imagenes
+        const list_img = ['../public/images/img-blog/blog-1.jpg', '../public/images/img-blog/blog-2.jpg',
+            '../public/images/img-blog/blog-3.jpg', '../public/images/img-blog/blog-4.jpg',
+            '../public/images/img-blog/blog-5.jpg', '../public/images/img-blog/blog-6.jpg',
+            '../public/images/img-blog/blog-7.jpg', '../public/images/img-blog/blog-8.jpg',
+            '../public/images/img-blog/blog-9.jpg', '../public/images/img-blog/blog-10.jpg'
+        ]
+
+        //funcion, mostrar el contenido de la bd al blog , especificamente dentro del section blog
+        const dataSee = () => {
+            fetch('../trigger/posteo.php?action=GET')
+                .then((res) => res.json())
+                .then((Data) => {
+                    let intervalo = 0;
+                    //iterar de la Lista , dupla, etc, con foreach 
+                    Data.forEach(data => {
+                        //sumar mostrar cada Secmento del codigo , y se muestra
+                        // de forma independiente
+                        htmlBlog.innerHTML +=
+                            `
+                <div class="container-blogs">
+                    <div class="blogs">
+                        <div class="blog">
+                            <div class="titulo limited-title">
+                                <h3>${data.titulo}</h3>
+                            </div>
+                            <div class="resumen limited-text">
+                                ${data.contenido}
+                            </div>
+                            <div class="btn-blog">
+                                <a href="${data.link}" class="btn-blog">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="img-blogs">
+                        <div class="img-blog">
+                            <img src="${list_img[intervalo]}" alt="">
+                        </div>
+                    </div>
+                </div>
+                `;
+                        htmlBlog.innerHTML += '\n';
+                        intervalo++;
+                        //repetir imagen una vez llegado a 10 blog section
+                        if (intervalo >= 10) {
+                            intervalo = 0;
+                        }
+
+                    });
+
+                })
+ 
+            }
+        dataSee();
+    </script>
+
+    <!-- <script type="application/javascript" src="../public/js/main.js" async></script> -->
     <!-- <script type="application/javascript" src="../public/js/blog.js" async></script> -->
 </body>
 

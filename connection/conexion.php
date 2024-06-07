@@ -1,5 +1,3 @@
-<!-- Archivo: ../connection/conexion.php -->
-
 <?php
 
 function conexion() {
@@ -13,7 +11,7 @@ function conexion() {
     $servername = "localhost"; // Cambia esto según tu configuración
     $username = "root";
     $password = "";
-    $dbname = "ghxumdmy_tamiperu";
+    $dbname = "tamiperu";
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -25,4 +23,3 @@ function conexion() {
 
     return $conn;
 }
-?>

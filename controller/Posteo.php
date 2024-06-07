@@ -15,6 +15,11 @@ class PosteoController {
         return $this->posteoModel->get();
     }
 
+    public function getMost(){
+        $id = isset($_POST['id']) ? $_POST['id'] : null;
+        return $this->posteoModel->getMost($id);
+    }
+
     public function add(){
         if(isset($_POST['titulo']) && isset($_POST['contenido']) && isset($_POST['link']) && isset($_POST['fecha'])){
             $titulo = $_POST['titulo'];

@@ -1,6 +1,6 @@
 <?php 
-require_once './controller/posteo.php';
-require_once './models/posteo.php';
+require_once '../controller/Posteo.php';
+require_once '../models/posteo.php';
 
 
 $controller = new PosteoController();
@@ -18,4 +18,6 @@ else if($action == 'UPDATE'){
 }
 else if($action == 'GET'){
     echo json_encode($controller->get());
+}else if($action == 'Mostrar'){
+    echo json_encode($controller->getMost());
 }
