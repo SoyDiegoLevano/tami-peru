@@ -9,11 +9,11 @@ function conexion() {
     $password = "ghxumdmy_tamiperu";
     $dbname = "ghxumdmy_tamiperu"; */
 
-        // Conexión a la base de datos
-        $servername = "localhost"; // Cambia esto según tu configuración
-        $username = "root";
-        $password = "";
-        $dbname = "ghxumdmy_tamiperu";
+    // Conexión a la base de datos
+    $servername = "localhost"; // Cambia esto según tu configuración
+    $username = "root";
+    $password = "";
+    $dbname = "ghxumdmy_tamiperu";
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);

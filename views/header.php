@@ -10,6 +10,7 @@
                 <a href="../views/">Inicio</a>
                 <a href="nosotros.php">Nosotros</a>
                 <a href="productos.php">Productos</a>
+                <a href="blog.php">Blog</a>
                 <a href="contacto.php">Contactanos</a>
                 <a href="politica_envio.php">Politicas de envíos</a>
                 <a href="loguin.php">Admin</a>
