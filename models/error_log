@@ -1,0 +1,42 @@
+[04-Jan-2024 07:49:03 America/Boise] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[04-Jan-2024 07:54:47 America/Boise] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:41:48 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:41:57 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:43:49 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:44:36 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:47:20 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:48:39 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:48:52 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
+[28-Feb-2024 14:49:16 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php:8
+Stack trace:
+#0 /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php(8): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'tami')
+#1 {main}
+  thrown in /home3/ghxumdmy/public_html/tamiperu/models/procesar_loguin.php on line 8
