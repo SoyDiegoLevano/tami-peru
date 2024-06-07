@@ -1,7 +1,7 @@
 <?php
 session_start();
 // $conexion = new mysqli("localhost", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu");
-$conexion = new mysqli("localhost", "root", "", "tamiperu");
+$conexion = new mysqli("localhost", "root", "", "ghxumdmy_tamiperu");
 
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
