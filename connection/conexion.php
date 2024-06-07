@@ -3,11 +3,12 @@
 <?php
 
 function conexion() {
-    // Conexión a la base de datos
+    // Conexión a la base de datos, LA CONEXION LO CONFIGURAS ASI COMO ESTA EN EL HOST
+
     $servername = "localhost"; // Cambia esto según tu configuración
-    $username = "ghxumdmy_tamiperu";
-    $password = "ghxumdmy_tamiperu";
-    $dbname = "ghxumdmy_tamiperu";
+    $username = "root";
+    $password = "";
+    $dbname = "tamiperu";
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $dbname);

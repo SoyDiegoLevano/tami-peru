@@ -5,7 +5,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usernameOrEmail = $_POST["username_or_email"];
     $password = $_POST["password"];
 
-    $conexion = new mysqli("localhost", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu");
+    // $conexion = new mysqli("localhost", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu", "ghxumdmy_tamiperu");
+    $conexion = new mysqli("localhost", "root", "", "tamiperu");
+    
     if ($conexion->connect_error) {
         die("Error de conexión: " . $conexion->connect_error);
     }
