@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" type="text/css" href="../public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="../public/css/contacto.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../public/css/post.css">
     <title>.:: TAMI ::.</title>
 </head>
@@ -141,7 +140,6 @@
             </div>
         </div>
     </div>
-    <?php include_once "footer.php"; ?>
 
     <script>
         const objRegex_lost = {
