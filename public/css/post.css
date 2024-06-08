@@ -1,0 +1,36 @@
+body > .container {
+    padding-top: 100px;
+}
+
+.table  {
+    border: 1px solid #ddd !important;
+    width: 100%;
+}
+
+table > thead > tr > th {
+    border: 1px solid #ddd !important;
+}
+
+td {
+    background: white !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+}
+
+main > .btn {
+    margin-bottom: 50px;
+    background-color: rgb(4, 156, 155);
+    color: white;
+    margin-right: 15px;
+    border: none;
+}
+
+main > .btn:hover {
+    color: #fff;
+    background-color: rgb(4 126 126);
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: rgb(4, 107, 107);
+}
